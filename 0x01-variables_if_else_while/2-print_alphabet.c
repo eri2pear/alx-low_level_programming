@@ -1,11 +1,9 @@
-#include <stdio.h>                                                                             
-                                                                                         
-/**                                                                                            
- * main - prints the alphabet in lowercase,                                                    
- * followed by a new line                                                                      
- * Return: 0 (Success)                                                                         
- */                                                                                            
-
+#include <stdio.h>
+/**
+ * main -prints the alphabet in lowercase,
+ * followed by a line
+ * Return: 0 (Success)
+*/
 int main(void)
 {
 	char ch;
