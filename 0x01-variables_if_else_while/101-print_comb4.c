@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-	int n, m, l;
+	int i, j, k;
 
-	for (n = 0; n <= 9; n++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (m = 0; m <= 9; m++)
+		for (j = 0; j <= 9; j++)
 		{
-			for (l = 0; l <= 9; l++)
+			for (k = 0; k <= 9; k++)
 			{
-				putchar(n);
-				putchar(m);
-				putchar(l);
-				if ((n + m + l) < 168)
+				putchar(i);
+				putchar(j);
+				putchar(k);
+				if ((i + j + k) < 168)
 				{
 					putchar(',');
 					putchar(' ');
