@@ -8,17 +8,31 @@
  */
 int main(void)
 {
-	long int x = 612852475143;
-	long int py;
-	
-	for (py = 2; py < x; py++)
+	long int n;
+	long int max;
+	long int i;
+
+	n = 612852475143;
+	max = -1;
+
+	while (n % 2 == 0)
 	{
-		if (x % py == 0)
+		max = 2;
+		n /= 2;
+	}
+	for (i = 3; i <= sqrt(n); i = i + 2)
+	{
+		while (n % i == 0)
 		{
-			x = x / py;
+			max = i;
+			n = n / i;
 		}
 	}
-	printf("%ld\n", py);
+	
+	if (n > 2)
+		max = n;
+
+	printf("%ld\n", max);
 
 	return (0);
 }
