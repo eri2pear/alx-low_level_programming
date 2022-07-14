@@ -12,7 +12,7 @@
 
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int c1 = 0, c2 = 0, op,bg, dr1, dr2, add = 0;
+	int c1 = 0, c2 = 0, op, bg, dr1, dr2, add = 0;
 
 	while (*(n1 + c1) != '\0')
 		c1++;
@@ -22,7 +22,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		bg = c1;
 	else
 		bg = c2;
-	if (size_r <= bg +1)
+	if (size_r <= bg + 1)
 		return (0);
 	r[bg + 1] = '\0';
 	c1--, c2--, size_r--;
