@@ -1,1 +1,1 @@
-This a an assingment
+0x09. C - Static libraries
